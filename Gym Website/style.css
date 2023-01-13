@@ -1,0 +1,526 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f2f2f2;
+}
+
+:root {
+    --ff-catamaran: 'Catamaran', sans-serif;
+}
+
+/* Navigation Bar */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    background-color: #000;
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#logo {
+    margin: 10px 24px;
+    padding-right: 36px;
+}
+
+#logo img {
+    margin: 2px 5px;
+    height: 53px;
+    border-radius: 50%;
+}
+
+/* Navigation Bar: List Styling */
+
+#navbar ul {
+    display: flex;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 0px 65px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    letter-spacing: 2px;
+}
+
+/* Home Section  */
+
+#home {
+    background: url('/img/new.jpg') no-repeat center;
+    display: flex;
+    flex-direction: column;
+    padding: 3px 97px;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#home .s-one,
+.s-two {
+    color: #d81010;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: var(--ff-catamaran);
+    line-height: 1.25;
+    letter-spacing: 8px;
+    font-weight: 900;
+    font-size: 26px;
+    opacity: 0.6;
+}
+
+/* Services Section  */
+
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+#services .box {
+    padding: 34px;
+    margin: 2px 15px;
+    border-radius: 20px;
+    background: white;
+    margin-bottom: 20px;
+}
+
+#services .box:hover {
+    box-shadow: 0 5px 20px rgba(12, 17, 18, 0.683);
+}
+
+#services .box img {
+    height: 156px;
+    margin: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+#services .box p {
+    font-family: "Poppins";
+    font-size: 0.8rem;
+    text-align: justify;
+}
+
+/* Courses  */
+
+.cont {
+    align-items: center;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 56px;
+    color: rgb(223, 219, 219);
+    padding: 10px 30px 0px 30px;
+    text-align: center;
+}
+
+.card {
+    margin: 16px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding-bottom: 6px;
+}
+
+.card:hover {
+    box-shadow: 0 5px 20px rgba(12, 17, 18, 0.683);
+}
+
+.card a {
+    text-decoration: none;
+    padding: 2px 8px 2px 8px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-des {
+    display: flex;
+    justify-content: center;
+    padding: 5px 0px 15px 0px;
+    font-family: "Poppins";
+    letter-spacing: 1px;
+    color: #000;
+    font-weight: 400;
+}
+
+.card-btn {
+    background: linear-gradient(90deg, rgba(57, 56, 57, 1) 0%, rgba(101, 102, 102, 1) 100%);
+    color: #000;
+    padding: 2px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    font-family: "Poppins";
+}
+
+/* Gallery */
+
+.images img {
+    max-width: 85%;
+    border-radius: 32px;
+    padding: 18px;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+}
+
+.images img:hover {
+    box-shadow: 0 5px 20px rgba(12, 17, 18, 0.683);
+}
+
+.g-img {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: #111;
+}
+
+/* Contact Section  */
+
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    min-width: 60%;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.0rem;
+    background: #222;
+    color: #f2f2f2;
+    font-family: "Poppins";
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: "Poppins";
+}
+
+#contact-box textarea {
+    min-height: 200px;
+    resize: none;
+}
+
+form #submit {
+    width: 22%;
+    background: linear-gradient(90deg, rgba(57, 56, 57, 1) 0%, rgba(101, 102, 102, 1) 100%);
+    font-family: "Poppins";
+    letter-spacing: 1px;
+    border-radius: 150px;
+}
+
+
+.cont-img {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-img {
+    width: 500px;
+    height: 500px;
+    padding-left: 100px;
+}
+
+/* Footer */
+
+.socialinfo h4 {
+    padding: 0px 0px 6px 52px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.socialinfo p {
+    letter-spacing: 1px;
+    font-size: 16px;
+    padding-left: 52px;
+    color: #6c6868;
+}
+
+.socialinfobx .box {
+    display: flex;
+    padding: 12px;
+}
+
+.box .icon {
+    padding: 12px;
+    font-size: 20px;
+}
+
+.social {
+    font-size: 30px;
+    padding: 20px 0px 20px 42px;
+    font-family: "Poppins";
+    gap: 82px;
+    display: flex;
+}
+
+.social a {
+    padding: 12px;
+    text-decoration: none;
+    color: #2c2a2a;
+}
+
+.fa-facebook:hover {
+    color: #4267B2;
+}
+
+.fa-twitter:hover {
+    color: #1DA1F2;
+}
+
+.fa-linkedin:hover {
+    color: #0A66C2;
+}
+
+.fa-instagram:hover {
+    color: #e95950;
+}
+
+.fa-youtube:hover {
+    color: #FF0000;
+}
+
+.footer {
+    color: #222020;
+    padding: 9px 20px;
+    justify-content: center;
+    display: flex;
+    font-family: "Poppins";
+    font-weight: 500;
+    letter-spacing: 0.9px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #222020;
+}
+
+/* Utility Classes */
+
+.h-primary {
+    font-family: "Poppins";
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+.h-secondary {
+    font-family: "Poppins";
+    font-size: 2.3rem;
+    padding: 12px;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.btn {
+    margin: 100px;
+    background-color: black;
+    color: white;
+    padding: 3px 33px;
+    border: 4px solid grey;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* ------ Responsive --------- */
+
+@media (max-width: 991px) {
+
+    /* NavBar */
+    #navbar {
+        flex-direction: column;
+    }
+
+    #navbar ul li a {
+        font-size: 14px;
+        padding: 0px 7px;
+        padding-bottom: 8px;
+    }
+
+    #logo img {
+        margin-left: 38px;
+    }
+
+    /* Home section */
+
+    #home {
+        height: 370px;
+        padding: 3px 28px;
+    }
+
+    #home::before {
+        height: 480px;
+    }
+
+    #home h1 {
+        font-size: 20px;
+        font-weight: 900;
+    }
+
+    #home p {
+        font-size: 13px;
+    }
+
+    /* Services section  */
+
+    #services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #services .box {
+        margin-bottom: 22px;
+        width: 90%;
+    }
+
+    /* Cources section */
+
+    .cont {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Gallery  */
+
+    .g-img {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Contact us section */
+
+    #contact-box {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    #contact-box form {
+        width: 80%;
+    }
+
+    #contact-box input,
+    #contact-box textarea {
+        padding-right: 78px;
+    }
+
+    .cont-img img {
+        width: 300px;
+        height: 300px;
+    }
+
+    /* social */
+
+    .contactinfo h4 {
+        font-size: 20px;
+    }
+
+    .contactinfo p {
+        font-size: 10px;
+    }
+
+    .social {
+        padding-left: 3px;
+        font-size: 18px;
+        gap: 20px;
+    }
+
+    .social h4 {
+        padding: 0px 0px 6px 28px;
+    }
+
+    .socialinfo p {
+        padding-left: 28px;
+    }
+
+    .social a {
+        padding-left: 26px;
+    }
+
+    div #submit {
+        padding: 8px 60px 8px 16px;
+    }
+
+    /* Footer */
+
+    footer {
+        font-size: 11px;
+        padding: 0px;
+    }
+
+    /* Utility classes */
+
+    .h-primary {
+        font-size: 26px;
+        padding-top: 10px;
+    }
+
+    .btn {
+        font-size: 13px;
+        padding: 4px 8px;
+    }
+}
