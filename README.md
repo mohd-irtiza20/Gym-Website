@@ -17,7 +17,7 @@ Overall, the landing page of a gym website using HTML and CSS has been designed 
 
 Preview of the Project
 
-https://srinagar-fitness.netlify.app
+https://mi-gym-project.netlify.app/
 ## FAQ
 
 #### Question 1
